@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -155,4 +156,163 @@
 </script>
 </body>
 
+=======
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <title>Show Data</title>
+    <style>
+        body{
+            text-align:center;
+            background-color: #dbdddd;
+        }
+        .div{ margin:0 auto; width:1000px; height:800px; border:1px solid #F00}
+    </style>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.bootcss.com/socket.io/1.5.1/socket.io.min.js"></script>
+
+</head>
+
+
+
+<body>
+<h1>BIG DATA — key words in news source in real time </h1>
+    <h2>WebSokect</h2>
+    <form id="emit" method="POST" action='#'>
+        <input type="submit" value="Analysis in real time">
+    </form>
+    <div id='log'></div>
+<div>
+    <div id="main" style="width:880px;height: 700px;float:left;">第一个</div>
+    <div id="sum" style="width:800px;height: 700px;float:left;">第二个</div>
+</div>
+
+
+<!-- optimaze it . delete redandency data######################################################################################## -->
+<div id="messages"></div>
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('main'));
+    var myChart_sum = echarts.init(document.getElementById('sum'));
+        $(document).ready(function() {
+        var socket = io.connect();
+
+        socket.on('connect', function() {
+            socket.emit('connect_event', {data: 'connected!'});
+        })
+
+        socket.on('server_response', function(msg) {
+
+            if(msg.data != "connected!"){
+                processingData((JSON.parse(msg.data)))
+                titleSum((JSON.parse(msg.data)))
+            }
+
+        });
+
+        $('form#emit').submit(function(event) {
+                socket.emit('client_event', {data:"Start"});
+                return false;
+            });
+    });
+
+    function processingData(json){
+
+        var option = {
+            backgroundColor: '#ffffff',//背景色
+            title: {
+                text: 'Key Words Rank',
+                subtext: 'Data Source: Twitter Streaming API',
+                textStyle: {
+                    fontWeight: 'normal',              //标题颜色
+                    color: '#408829'
+                },
+            },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                }
+            },
+            legend: {
+                data: ['Pageviews']
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            xAxis: {
+                type: 'value',
+                boundaryGap: [0, 0.01]
+            },
+            yAxis: {
+                type: 'category',
+                data:json.titleNames
+            },
+            series: [
+                {
+                    name: 'Pageviews',
+                    type: 'bar',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'insideRight'
+                        }
+                    },
+                    itemStyle:{ normal:{color:'#f47209'} },
+                    data: json.titleCounts
+                }
+
+            ]
+        };
+        myChart.setOption(option);
+
+    }
+
+
+    function titleSum(json){
+
+        var option = {
+            backgroundColor: '#fbfbfb',//背景色
+            title: {
+                text: 'News Key words exposure [real time] statistics',
+                subtext: 'Data Source: Twitter Streaming API'
+            },
+
+
+            tooltip : {
+                formatter: "{a} <br/>{b} : {c}%"
+            },
+            toolbox: {
+                feature: {
+                    restore: {},
+                    saveAsImage: {}
+                }
+            },
+            series: [
+                {
+                    name: '业务指标',
+                    type: 'gauge',
+                    max:1000,
+                    detail: {formatter:'{value}Key Words'},
+                    data: [{value: 50, name: 'Total amount of key words'}]
+                }
+            ]
+        };
+
+        option.series[0].data[0].value = json.titleSum;
+        myChart_sum.setOption(option, true);
+
+    }
+
+
+</script>
+</body>
+
+>>>>>>> 6a9a1f8897db0d7c063476224d81cec9aa98e922
 </html>

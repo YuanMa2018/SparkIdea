@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
   <head>
     <title>Input page</title>
@@ -22,3 +23,29 @@
   </body>
 </html>
 
+=======
+<html>
+  <head>
+    <title>Input page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Please Type Keyword</h1>
+      <br>
+      <form action="" method="post">
+        <input type="text" placeholder="Key Word" name="KeyWord" value="{{
+          request.form.KeyWord }}">
+         <input type="text" placeholder="Default: 30 News Source" name="NewsSource" value="{{
+          request.form.NewsSource }}">
+        <input class="btn btn-default" type="submit" value="Go">
+      </form>
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+      {% endif %}
+    </div>
+  </body>
+</html>
+
+>>>>>>> 6a9a1f8897db0d7c063476224d81cec9aa98e922
