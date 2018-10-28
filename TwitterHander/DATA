@@ -1,0 +1,370 @@
+{
+  u
+  'quote_count': 0,
+  u
+  'contributors': None,
+  u
+  'truncated': False,
+  u
+  'text': u
+  '@FoxNews @BarackObama https://t.co/AazdeAfmgd',
+  u
+  'is_quote_status': False,
+  u
+  'in_reply_to_status_id': 1038115776232939520L,
+  u
+  'reply_count': 0,
+  u
+  'id': 1038117427891056641L,
+  u
+  'favorite_count': 0,
+  u
+  'entities': {
+    u
+    'user_mentions': [
+      {
+        u
+        'id': 1367531,
+        u
+        'indices': [
+          0,
+          8
+        ],
+        u
+        'id_str': u
+        '1367531',
+        u
+        'screen_name': u
+        'FoxNews',
+        u
+        'name': u
+        'Fox News'
+      },
+      {
+        u
+        'id': 813286,
+        u
+        'indices': [
+          9,
+          21
+        ],
+        u
+        'id_str': u
+        '813286',
+        u
+        'screen_name': u
+        'BarackObama',
+        u
+        'name': u
+        'Barack Obama'
+      }
+    ],
+    u
+    'symbols': [],
+    u
+    'hashtags': [],
+    u
+    'urls': [],
+    u
+    'media': [
+      {
+        u
+        'expanded_url': u
+        'https://twitter.com/jibfreshie/status/1038117427891056641/photo/1',
+        u
+        'display_url': u
+        'pic.twitter.com/AazdeAfmgd',
+        u
+        'url': u
+        'https://t.co/AazdeAfmgd',
+        u
+        'media_url_https': u
+        'https://pbs.twimg.com/media/DmgiSv_U0AEm1uB.jpg',
+        u
+        'id_str': u
+        '1038117419623960577',
+        u
+        'sizes': {
+          u
+          'small': {
+            u
+            'h': 300,
+            u
+            'resize': u
+            'fit',
+            u
+            'w': 500
+          },
+          u
+          'large': {
+            u
+            'h': 300,
+            u
+            'resize': u
+            'fit',
+            u
+            'w': 500
+          },
+          u
+          'medium': {
+            u
+            'h': 300,
+            u
+            'resize': u
+            'fit',
+            u
+            'w': 500
+          },
+          u
+          'thumb': {
+            u
+            'h': 150,
+            u
+            'resize': u
+            'crop',
+            u
+            'w': 150
+          }
+        },
+        u
+        'indices': [
+          22,
+          45
+        ],
+        u
+        'type': u
+        'photo',
+        u
+        'id': 1038117419623960577L,
+        u
+        'media_url': u
+        'http://pbs.twimg.com/media/DmgiSv_U0AEm1uB.jpg'
+      }
+    ]
+  },
+  u
+  'retweeted': False,
+  u
+  'coordinates': None,
+  u
+  'timestamp_ms': u
+  '1536341456755',
+  u
+  'source': u
+  '<a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>',
+  u
+  'in_reply_to_screen_name': u
+  'FoxNews',
+  u
+  'id_str': u
+  '1038117427891056641',
+  u
+  'display_text_range': [
+    21,
+    21
+  ],
+  u
+  'retweet_count': 0,
+  u
+  'in_reply_to_user_id': 1367531,
+  u
+  'favorited': False,
+  u
+  'user': {
+    u
+    'follow_request_sent': None,
+    u
+    'profile_use_background_image': True,
+    u
+    'default_profile_image': False,
+    u
+    'id': 93039464,
+    u
+    'default_profile': True,
+    u
+    'verified': False,
+    u
+    'profile_image_url_https': u
+    'https://pbs.twimg.com/profile_images/378800000532981256/dc493ba6572c5e4608315974206d5dd4_normal.jpeg',
+    u
+    'profile_sidebar_fill_color': u
+    'DDEEF6',
+    u
+    'profile_text_color': u
+    '333333',
+    u
+    'followers_count': 88,
+    u
+    'profile_sidebar_border_color': u
+    'C0DEED',
+    u
+    'id_str': u
+    '93039464',
+    u
+    'profile_background_color': u
+    'C0DEED',
+    u
+    'listed_count': 4,
+    u
+    'profile_background_image_url_https': u
+    'https://abs.twimg.com/images/themes/theme1/bg.png',
+    u
+    'utc_offset': None,
+    u
+    'statuses_count': 2550,
+    u
+    'description': u
+    'Snowboarder, musician, motorcycle enthuiest, lover of craft beer, Patriot, independant conservative thinker, dog lover, dad, ex- U.S.A.F. Military Police',
+    u
+    'friends_count': 795,
+    u
+    'location': None,
+    u
+    'profile_link_color': u
+    '1DA1F2',
+    u
+    'profile_image_url': u
+    'http://pbs.twimg.com/profile_images/378800000532981256/dc493ba6572c5e4608315974206d5dd4_normal.jpeg',
+    u
+    'following': None,
+    u
+    'geo_enabled': True,
+    u
+    'profile_banner_url': u
+    'https://pbs.twimg.com/profile_banners/93039464/1522715117',
+    u
+    'profile_background_image_url': u
+    'http://abs.twimg.com/images/themes/theme1/bg.png',
+    u
+    'name': u
+    'bhill\U0001f3c2\U0001f1fa\U0001f1f8\U0001f6b4\u200d\u2640\ufe0f\U0001f6a3\u200d\u2640\ufe0f\U0001f3b8',
+    u
+    'lang': u
+    'en',
+    u
+    'profile_background_tile': False,
+    u
+    'favourites_count': 7843,
+    u
+    'screen_name': u
+    'jibfreshie',
+    u
+    'notifications': None,
+    u
+    'url': None,
+    u
+    'created_at': u
+    'Fri Nov 27 20:15:30 +0000 2009',
+    u
+    'contributors_enabled': False,
+    u
+    'time_zone': None,
+    u
+    'protected': False,
+    u
+    'translator_type': u
+    'none',
+    u
+    'is_translator': False
+  },
+  u
+  'geo': None,
+  u
+  'in_reply_to_user_id_str': u
+  '1367531',
+  u
+  'possibly_sensitive': False,
+  u
+  'lang': u
+  'und',
+  u
+  'created_at': u
+  'Fri Sep 07 17:30:56 +0000 2018',
+  u
+  'filter_level': u
+  'low',
+  u
+  'in_reply_to_status_id_str': u
+  '1038115776232939520',
+  u
+  'place': None,
+  u
+  'extended_entities': {
+    u
+    'media': [
+      {
+        u
+        'expanded_url': u
+        'https://twitter.com/jibfreshie/status/1038117427891056641/photo/1',
+        u
+        'display_url': u
+        'pic.twitter.com/AazdeAfmgd',
+        u
+        'url': u
+        'https://t.co/AazdeAfmgd',
+        u
+        'media_url_https': u
+        'https://pbs.twimg.com/media/DmgiSv_U0AEm1uB.jpg',
+        u
+        'id_str': u
+        '1038117419623960577',
+        u
+        'sizes': {
+          u
+          'small': {
+            u
+            'h': 300,
+            u
+            'resize': u
+            'fit',
+            u
+            'w': 500
+          },
+          u
+          'large': {
+            u
+            'h': 300,
+            u
+            'resize': u
+            'fit',
+            u
+            'w': 500
+          },
+          u
+          'medium': {
+            u
+            'h': 300,
+            u
+            'resize': u
+            'fit',
+            u
+            'w': 500
+          },
+          u
+          'thumb': {
+            u
+            'h': 150,
+            u
+            'resize': u
+            'crop',
+            u
+            'w': 150
+          }
+        },
+        u
+        'indices': [
+          22,
+          45
+        ],
+        u
+        'type': u
+        'photo',
+        u
+        'id': 1038117419623960577L,
+        u
+        'media_url': u
+        'http://pbs.twimg.com/media/DmgiSv_U0AEm1uB.jpg'
+      }
+    ]
+  }
+}
